@@ -1,0 +1,55 @@
+[manifest]
+version = "1.0.0"
+priority = 0
+
+[vars]
+zerpFamiliarCostumeenv = "rom.mods['zerp-FamiliarCostume'].lovely_env"
+
+[[patches]]
+[patches.pattern]
+target = "FamiliarCostumeLogic.lua"
+pattern = '''
+function DoFamiliarCostumeShopPurchase( screen, button, args )
+	args = args or {}
+	local itemData = button.Data
+	GameState.FamiliarCostumes[screen.OpenedFrom.Name] = itemData.Name
+'''
+position = "after"
+payload = '''
+    GameState.ModFamiliarCostumes = GameState.ModFamiliarCostumes or {}
+    if {{lovely:zerpFamiliarCostumeenv}}.FamiliarCostumeData[itemData.Name] ~= nil then
+		GameState.FamiliarCostumes[screen.OpenedFrom.Name] = FamiliarData[screen.OpenedFrom.Name].DefaultCostume
+		GameState.ModFamiliarCostumes[screen.OpenedFrom.Name] = itemData.Name
+    else
+        GameState.ModFamiliarCostumes[screen.OpenedFrom.Name] = nil
+	end
+'''
+match_indent = true
+times = 1
+
+[[patches]]
+[patches.pattern]
+target = "FamiliarCostumeLogic.lua"
+pattern = '''
+			local stateText = "Shop_Purchased"
+			if GameState.FamiliarCostumes[screen.OpenedFrom.Name] ~= itemName then
+				button.Free = true
+				button.OnPressedFunctionName = "HandleFamiliarCostumeShopReAdd"
+				stateText = "Shop_ReAdd"
+			end
+'''
+position = "after"
+payload = '''
+			if GameState.ModFamiliarCostumes[screen.OpenedFrom.Name] ~= nil and itemName == FamiliarData[screen.OpenedFrom.Name].DefaultCostume then
+				button.Free = true
+				button.OnPressedFunctionName = "HandleFamiliarCostumeShopReAdd"
+				stateText = "Shop_ReAdd"
+			end
+			if GameState.ModFamiliarCostumes[screen.OpenedFrom.Name] == itemName then
+				button.Free = false
+				button.OnPressedFunctionName = nil
+				stateText = "Shop_Purchased"
+			end
+'''
+match_indent = true
+times = 1
