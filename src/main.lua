@@ -47,6 +47,7 @@ local function on_ready()
     import 'sjson.lua'
     import 'familiardata.lua'
     import 'familiar.lua'
+    import 'ready.lua'
 end
 
 local function on_reload()

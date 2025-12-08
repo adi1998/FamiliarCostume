@@ -360,7 +360,7 @@ FamiliarCostumeData = {
 	},
 }
 
-game.OverwriteTableKeys( game.WorldUpgradeData,FamiliarCostumeData)
+game.OverwriteTableKeys( game.WorldUpgradeData, FamiliarCostumeData)
 
 mod.FamiliarList = {
     ItemCategories = {
@@ -394,7 +394,7 @@ mod.FamiliarList = {
 
 for familiar, familiarCostumeList in pairs(mod.FamiliarList.ItemCategories) do
     for _, familiarCostume in ipairs(familiarCostumeList) do
-        table.insert(game.ScreenData.FamiliarCostumeShop.ItemCategories[familiar],familiarCostume)
+        table.insert(game.ScreenData.FamiliarCostumeShop.ItemCategories[familiar], familiarCostume)
     end
 end
 
