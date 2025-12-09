@@ -445,36 +445,6 @@ mod.FamiliarMenuData = {
 		InventoryIconOffsetX = -25,
 		InventoryIconScale = 0.45,
 	},
-
-	ComponentData = {
-		ActionBar = {
-
-			ChildrenOrder =
-			{
-				"CloseButton",
-				"SelectButton",
-				"PinButton",
-				"FavoriteButton"
-			},
-
-			Children = {
-				FavoriteButton = {
-					Graphic = "ContextualActionButton",
-					GroupName = "Combat_Menu_Overlay",
-					Alpha = 1,
-					Data =
-					{
-						-- Hotkey only
-						OnPressedFunctionName = _PLUGIN.guid .. "." .. "ToggleFavoriteFamiliarCostume",
-						ControlHotkeys = { "Rarify", },
-					},
-					Text = "{RY} Add/Remove Favorite",
-					TextArgs = game.UIData.ContextualButtonFormatRight,
-				}
-			}
-		}
-	}
-
 }
 
 game.ScreenData.FamiliarCostumeShop = game.DeepMergeTables(game.ScreenData.FamiliarCostumeShop, mod.FamiliarMenuData)
