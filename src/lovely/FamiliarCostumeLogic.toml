@@ -53,3 +53,58 @@ payload = '''
 '''
 match_indent = true
 times = 1
+
+[[patches]]
+[patches.pattern]
+target = "FamiliarCostumeLogic.lua"
+pattern = '''
+			local pinIcon = CreateScreenComponent({ Name = "BlankObstacle", Group = screen.ComponentData.DefaultGroup, Alpha = 0.0, })
+'''
+position = "at"
+payload = '''
+			local pinIcon = CreateScreenComponent({ Name = "BlankObstacle", Group = screen.ComponentData.DefaultGroup, Alpha = 0.0, Scale = 0.6 })
+'''
+match_indent = true
+times = 1
+
+[[patches]]
+[patches.pattern]
+target = "FamiliarCostumeLogic.lua"
+pattern = '''
+			Attach({ Id = pinIcon.Id, DestinationId = button.Id, OffsetX = screen.PinOffsetX, OffsetY = UIData.PinIconListOffsetY })
+'''
+position = "at"
+payload = '''
+			Attach({ Id = pinIcon.Id, DestinationId = button.Id, OffsetX = screen.PinOffsetX, OffsetY = UIData.PinIconListOffsetY + 15 })
+'''
+match_indent = true
+times = 1
+
+[[patches]]
+[patches.pattern]
+target = "FamiliarCostumeLogic.lua"
+pattern = '''
+			if not GameState.WorldUpgradesViewed[itemName] then
+				local newIcon = CreateScreenComponent({
+					Name = "BlankObstacle",
+					Group = screen.ComponentData.DefaultGroup,
+					Animation = "MusicPlayerNewTrack",
+					Alpha = 0.0,
+				})
+				components[itemName.."NewIcon"] = newIcon
+				table.insert( button.AssociatedIds, newIcon.Id )
+				Attach({ Id = newIcon.Id, DestinationId = button.Id, OffsetX = 300, OffsetY = 0 })
+				button.NewIconId = newIcon.Id
+			end
+		end
+'''
+position = "after"
+payload = '''
+		local favIcon = CreateScreenComponent({ Name = "BlankObstacle", Group = screen.ComponentData.DefaultGroup, Alpha = 0.0, })
+		components[itemName .. "FavIcon"] = favIcon
+		table.insert( button.AssociatedIds, favIcon.Id )
+		Attach({ Id = favIcon.Id, DestinationId = button.Id, OffsetX = screen.PinOffsetX, OffsetY = UIData.PinIconListOffsetY })
+		button.FavButtonId = favIcon.Id
+'''
+match_indent = true
+times = 1

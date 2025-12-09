@@ -97,7 +97,7 @@ FamiliarCostumeData = {
 
     FamiliarCostume_HoundBeige =
 	{
-		Icon = "hound_beige",
+		Icon = _PLUGIN.guid .. "hound_beige",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "HoundFamiliar_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/hound/CritterDogBeige_Color",
@@ -121,7 +121,7 @@ FamiliarCostumeData = {
 
     FamiliarCostume_HoundTan =
 	{
-		Icon = "hound_tan",
+		Icon = _PLUGIN.guid .. "hound_tan",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "HoundFamiliar_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/hound/CritterDogTan_Color",
@@ -145,7 +145,7 @@ FamiliarCostumeData = {
 
     FamiliarCostume_HoundOrange =
 	{
-		Icon = "hound_orange",
+		Icon = _PLUGIN.guid .. "hound_orange",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "HoundFamiliar_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/hound/CritterDogOrange_Color",
@@ -407,6 +407,8 @@ mod.FamiliarMenuData = {
 	IconScale = 0.5,
 	ItemsPerPage = 11,
 
+	PinOffsetX = 265,
+
     ItemAvailableAnimation = "MusicPlayerItemButton",
 	ItemAvailableMouseOverAnimation = "MusicPlayerItemNowPlaying",
 	ItemAvailableMouseOffAnimation = "MusicPlayerItemButton",
@@ -443,7 +445,60 @@ mod.FamiliarMenuData = {
 		InventoryIconOffsetX = -25,
 		InventoryIconScale = 0.45,
 	},
+
+	ComponentData = {
+		ActionBar = {
+
+			ChildrenOrder =
+			{
+				"CloseButton",
+				"SelectButton",
+				"PinButton",
+				"FavoriteButton"
+			},
+
+			Children = {
+				FavoriteButton = {
+					Graphic = "ContextualActionButton",
+					GroupName = "Combat_Menu_Overlay",
+					Alpha = 1,
+					Data =
+					{
+						-- Hotkey only
+						OnPressedFunctionName = _PLUGIN.guid .. "." .. "ToggleFavoriteFamiliarCostume",
+						ControlHotkeys = { "Rarify", },
+					},
+					Text = "{RY} Add/Remove Favorite",
+					TextArgs = game.UIData.ContextualButtonFormatRight,
+				}
+			}
+		}
+	}
+
 }
 
 game.ScreenData.FamiliarCostumeShop = game.DeepMergeTables(game.ScreenData.FamiliarCostumeShop, mod.FamiliarMenuData)
+
+game.ScreenData.FamiliarCostumeShop.ComponentData.ActionBar.ChildrenOrder = {
+	"CloseButton",
+	"SelectButton",
+	"PinButton",
+	"FavoriteButton"
+}
+
+game.ScreenData.FamiliarCostumeShop.ComponentData.ActionBar.Children.FavoriteButton = {
+	Graphic = "ContextualActionButton",
+	GroupName = "Combat_Menu_Overlay",
+	Alpha = 1,
+	Data =
+	{
+		-- Hotkey only
+		OnPressedFunctionName = _PLUGIN.guid .. "." .. "ToggleFavoriteFamiliarCostume",
+		ControlHotkeys = { "Inventory", },
+	},
+	Text = "{V} Add/Remove Favorite",
+	TextArgs = game.UIData.ContextualButtonFormatRight,
+}
+
+
 game.ProcessDataStore(game.WorldUpgradeData)

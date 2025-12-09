@@ -39,7 +39,7 @@ end)
 local familiarIconFormat = {
         Name = _PLUGIN.guid,
         FilePath = "zerp-FamiliarCostume/icons/",
-        Scale = 1.3
+        Scale = 1.1
 }
 
 local iconorder = {
