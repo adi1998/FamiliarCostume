@@ -97,7 +97,7 @@ FamiliarCostumeData = {
 
     FamiliarCostume_HoundBeige =
 	{
-		Icon = "Costume_Hound02",
+		Icon = "hound_beige",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "HoundFamiliar_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/hound/CritterDogBeige_Color",
@@ -121,7 +121,7 @@ FamiliarCostumeData = {
 
     FamiliarCostume_HoundTan =
 	{
-		Icon = "Costume_Hound02",
+		Icon = "hound_tan",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "HoundFamiliar_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/hound/CritterDogTan_Color",
@@ -145,7 +145,7 @@ FamiliarCostumeData = {
 
     FamiliarCostume_HoundOrange =
 	{
-		Icon = "Costume_Hound02",
+		Icon = "hound_orange",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "HoundFamiliar_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/hound/CritterDogOrange_Color",

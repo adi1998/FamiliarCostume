@@ -56,6 +56,9 @@ local FamiliarIconList = {
     "cat_tuxedo",
     "cat_white",
     "bird_green",
+    "hound_tan",
+    "hound_orange",
+    "hound_beige",
 }
 
 sjson.hook(guiScreensVFXFile, function (data)
