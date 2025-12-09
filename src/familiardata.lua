@@ -1,7 +1,7 @@
 FamiliarCostumeData = {
     FamiliarCostume_FrogBrown =
 	{
-		Icon = "Costume_Frog02",
+		Icon = _PLUGIN.guid .. "frog_brown",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "Frog_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/frog/CritterFrogBrown_Color",
@@ -25,7 +25,7 @@ FamiliarCostumeData = {
 
     FamiliarCostume_FrogGreen =
 	{
-		Icon = "Costume_Frog02",
+		Icon = _PLUGIN.guid .. "frog_green",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "Frog_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/frog/CritterFrogGreen_Color",
@@ -49,7 +49,7 @@ FamiliarCostumeData = {
 
     FamiliarCostume_FrogGrey =
 	{
-		Icon = "Costume_Frog02",
+		Icon = _PLUGIN.guid .. "frog_grey",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "Frog_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/frog/CritterFrogGrey_Color",
@@ -73,7 +73,7 @@ FamiliarCostumeData = {
 
     FamiliarCostume_FrogYellow =
 	{
-		Icon = "Costume_Frog02",
+		Icon = _PLUGIN.guid .. "frog_yellow",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "Frog_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/frog/CritterFrogYellow_Color",
