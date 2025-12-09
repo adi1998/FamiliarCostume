@@ -453,6 +453,7 @@ game.ScreenData.FamiliarCostumeShop.ComponentData.ActionBar.ChildrenOrder = {
 	"CloseButton",
 	"SelectButton",
 	"PinButton",
+	"RandomizeButton",
 	"FavoriteButton"
 }
 
@@ -466,9 +467,24 @@ game.ScreenData.FamiliarCostumeShop.ComponentData.ActionBar.Children.FavoriteBut
 		OnPressedFunctionName = _PLUGIN.guid .. "." .. "ToggleFavoriteFamiliarCostume",
 		ControlHotkeys = { "Inventory", },
 	},
-	Text = "{V} Add/Remove Favorite",
+	Text = "{V} ADD/REMOVE FAVORITE",
 	TextArgs = game.UIData.ContextualButtonFormatRight,
 }
 
+game.ScreenData.FamiliarCostumeShop.ComponentData.ActionBar.Children.RandomizeButton = {
+	Graphic = "ContextualActionButton",
+	GroupName = "Combat_Menu_Overlay",
+	Alpha = 1,
+	Data =
+	{
+		-- Hotkey only
+		OnPressedFunctionName = _PLUGIN.guid .. "." .. "ToggleRandomizeFamiliarCostume",
+		OnMouseOverFunctionName = "MouseOverContextualAction",
+		OnMouseOffFunctionName = "MouseOffContextualAction",
+		ControlHotkeys = { "Confirm", },
+	},
+	Text = "{CF} RANDOMIZE",
+	TextArgs = game.UIData.ContextualButtonFormatRight,
+}
 
 game.ProcessDataStore(game.WorldUpgradeData)
