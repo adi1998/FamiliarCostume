@@ -6,10 +6,8 @@ FamiliarCostumeData = {
 		GrannyModel = "Frog_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/frog/CritterFrogBrown_Color",
 
-		Cost =
-		{
-			CosmeticsPoints = 100,
-		},
+		AlwaysRevealImmediately = true,
+        Cost = {},
 
 		PreRevealVoiceLines =
 		{
@@ -30,10 +28,8 @@ FamiliarCostumeData = {
 		GrannyModel = "Frog_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/frog/CritterFrogGreen_Color",
 
-		Cost =
-		{
-			CosmeticsPoints = 100,
-		},
+		AlwaysRevealImmediately = true,
+        Cost = {},
 
 		PreRevealVoiceLines =
 		{
@@ -54,10 +50,8 @@ FamiliarCostumeData = {
 		GrannyModel = "Frog_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/frog/CritterFrogGrey_Color",
 
-		Cost =
-		{
-			CosmeticsPoints = 100,
-		},
+		AlwaysRevealImmediately = true,
+        Cost = {},
 
 		PreRevealVoiceLines =
 		{
@@ -78,10 +72,8 @@ FamiliarCostumeData = {
 		GrannyModel = "Frog_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/frog/CritterFrogYellow_Color",
 
-		Cost =
-		{
-			CosmeticsPoints = 100,
-		},
+		AlwaysRevealImmediately = true,
+        Cost = {},
 
 		PreRevealVoiceLines =
 		{
@@ -102,10 +94,8 @@ FamiliarCostumeData = {
 		GrannyModel = "HoundFamiliar_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/hound/CritterDogBeige_Color",
 
-		Cost =
-		{
-			CosmeticsPoints = 100,
-		},
+		AlwaysRevealImmediately = true,
+        Cost = {},
 
 		PreRevealVoiceLines =
 		{
@@ -126,10 +116,8 @@ FamiliarCostumeData = {
 		GrannyModel = "HoundFamiliar_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/hound/CritterDogTan_Color",
 
-		Cost =
-		{
-			CosmeticsPoints = 100,
-		},
+		AlwaysRevealImmediately = true,
+        Cost = {},
 
 		PreRevealVoiceLines =
 		{
@@ -150,10 +138,8 @@ FamiliarCostumeData = {
 		GrannyModel = "HoundFamiliar_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/hound/CritterDogOrange_Color",
 
-		Cost =
-		{
-			CosmeticsPoints = 100,
-		},
+		AlwaysRevealImmediately = true,
+        Cost = {},
 
 		PreRevealVoiceLines =
 		{
@@ -174,10 +160,8 @@ FamiliarCostumeData = {
 		GrannyModel = "CritterRaven_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/raven/CritterRavenBlack_Color",
 
-		Cost =
-		{
-			CosmeticsPoints = 100,
-		},
+		AlwaysRevealImmediately = true,
+        Cost = {},
 
 		PreRevealVoiceLines =
 		{
@@ -198,10 +182,8 @@ FamiliarCostumeData = {
 		GrannyModel = "RavenFamiliar_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/raven/DefaultRavenGreen_Color",
 
-		Cost =
-		{
-			CosmeticsPoints = 100,
-		},
+		AlwaysRevealImmediately = true,
+        Cost = {},
 
 		PreRevealVoiceLines =
 		{
@@ -222,10 +204,8 @@ FamiliarCostumeData = {
 		GrannyModel = "CatFamiliar_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/cat/CritterCatBicolor_Color",
 
-		Cost =
-		{
-			CosmeticsPoints = 100,
-		},
+		AlwaysRevealImmediately = true,
+        Cost = {},
 
 		PreRevealVoiceLines =
 		{
@@ -246,10 +226,8 @@ FamiliarCostumeData = {
 		GrannyModel = "CatFamiliar_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/cat/CritterCatBlack_Color",
 
-		Cost =
-		{
-			CosmeticsPoints = 100,
-		},
+		AlwaysRevealImmediately = true,
+        Cost = {},
 
 		PreRevealVoiceLines =
 		{
@@ -270,10 +248,8 @@ FamiliarCostumeData = {
 		GrannyModel = "CatFamiliar_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/cat/CritterCatSpotted_Color",
 
-		Cost =
-		{
-			CosmeticsPoints = 100,
-		},
+		AlwaysRevealImmediately = true,
+        Cost = {},
 
 		PreRevealVoiceLines =
 		{
@@ -294,10 +270,8 @@ FamiliarCostumeData = {
 		GrannyModel = "CatFamiliar_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/cat/CritterCatTabby_Color",
 
-		Cost =
-		{
-			CosmeticsPoints = 100,
-		},
+		AlwaysRevealImmediately = true,
+        Cost = {},
 
 		PreRevealVoiceLines =
 		{
@@ -318,10 +292,8 @@ FamiliarCostumeData = {
 		GrannyModel = "CatFamiliar_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/cat/CritterCatTuxedo_Color",
 
-		Cost =
-		{
-			CosmeticsPoints = 100,
-		},
+		AlwaysRevealImmediately = true,
+        Cost = {},
 
 		PreRevealVoiceLines =
 		{
@@ -342,10 +314,8 @@ FamiliarCostumeData = {
 		GrannyModel = "CatFamiliar_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/cat/CritterCatWhite_Color",
 
-		Cost =
-		{
-			CosmeticsPoints = 100,
-		},
+		AlwaysRevealImmediately = true,
+        Cost = {},
 
 		PreRevealVoiceLines =
 		{
@@ -360,10 +330,11 @@ FamiliarCostumeData = {
 	},
 
 	FamiliarCostume_CerberusBase = {
-		Icon = _PLUGIN.guid .. "cerb_base",
+		Icon = _PLUGIN.guid .. "cerb_default",
 		InheritFrom = {"DefaultFamiliarCostume"},
 		GrannyModel = "InfestedCerberus_Mesh",
 		AlwaysRevealImmediately = true,
+        Cost = {},
 
 		SwitchCostumeVoiceLines =
 		{
@@ -372,11 +343,12 @@ FamiliarCostumeData = {
 	},
 
 	FamiliarCostume_CerberusEM = {
-		Icon = _PLUGIN.guid .. "cerb_em",
+		Icon = _PLUGIN.guid .. "cerb_unrivaled",
 		InheritFrom = {"DefaultFamiliarCostume"},
 		GrannyModel = "InfestedCerberus_Mesh",
 		GrannyTexture = "GR2/InfestedCerberusEM_Color",
 		AlwaysRevealImmediately = true,
+        Cost = {},
 
 		SwitchCostumeVoiceLines =
 		{
@@ -385,11 +357,12 @@ FamiliarCostumeData = {
 	},
 
 	FamiliarCostume_CerberusEM2 = {
-		Icon = _PLUGIN.guid .. "cerb_em",
+		Icon = _PLUGIN.guid .. "cerb_unrivaled2",
 		InheritFrom = {"DefaultFamiliarCostume"},
 		GrannyModel = "InfestedCerberus_Mesh",
 		GrannyTexture = "GR2/InfestedCerberusEM2_Color",
 		AlwaysRevealImmediately = true,
+        Cost = {},
 
 		SwitchCostumeVoiceLines =
 		{

@@ -17,6 +17,9 @@ local FamiliarNames = {
     FamiliarCostume_CatTabby = "Tabby",
     FamiliarCostume_CatTuxedo = "Tuxedo",
     FamiliarCostume_CatWhite = "White",
+    FamiliarCostume_CerberusBase = "Default",
+    FamiliarCostume_CerberusEM = "Unrivaled",
+    FamiliarCostume_CerberusEM2 = "Unrivaled Phase 2",
 }
 
 local helptextorder = {
@@ -63,6 +66,9 @@ local FamiliarIconList = {
     "frog_yellow",
     "frog_grey",
     "frog_green",
+    "cerb_default",
+    "cerb_unrivaled",
+    "cerb_unrivaled2",
 }
 
 sjson.hook(guiScreensVFXFile, function (data)
