@@ -358,6 +358,44 @@ FamiliarCostumeData = {
 			{ GlobalVoiceLines = "FamiliarMiscSwitchCostumeVoiceLines" },
 		},
 	},
+
+	FamiliarCostume_CerberusBase = {
+		Icon = _PLUGIN.guid .. "cerb_base",
+		InheritFrom = {"DefaultFamiliarCostume"},
+		GrannyModel = "InfestedCerberus_Mesh",
+		AlwaysRevealImmediately = true,
+
+		SwitchCostumeVoiceLines =
+		{
+			{ GlobalVoiceLines = "FamiliarSwitchToDefaultCostumeVoiceLines" },
+		},
+	},
+
+	FamiliarCostume_CerberusEM = {
+		Icon = _PLUGIN.guid .. "cerb_em",
+		InheritFrom = {"DefaultFamiliarCostume"},
+		GrannyModel = "InfestedCerberus_Mesh",
+		GrannyTexture = "GR2/InfestedCerberusEM_Color",
+		AlwaysRevealImmediately = true,
+
+		SwitchCostumeVoiceLines =
+		{
+			{ GlobalVoiceLines = "FamiliarSwitchToDefaultCostumeVoiceLines" },
+		},
+	},
+
+	FamiliarCostume_CerberusEM2 = {
+		Icon = _PLUGIN.guid .. "cerb_em",
+		InheritFrom = {"DefaultFamiliarCostume"},
+		GrannyModel = "InfestedCerberus_Mesh",
+		GrannyTexture = "GR2/InfestedCerberusEM2_Color",
+		AlwaysRevealImmediately = true,
+
+		SwitchCostumeVoiceLines =
+		{
+			{ GlobalVoiceLines = "FamiliarSwitchToDefaultCostumeVoiceLines" },
+		},
+	}
 }
 
 game.OverwriteTableKeys( game.WorldUpgradeData, FamiliarCostumeData)
@@ -396,6 +434,15 @@ for familiar, familiarCostumeList in pairs(mod.FamiliarList.ItemCategories) do
     for _, familiarCostume in ipairs(familiarCostumeList) do
         table.insert(game.ScreenData.FamiliarCostumeShop.ItemCategories[familiar], familiarCostume)
     end
+end
+
+if rom.mods["zerp-Cerberus_Familiar"]  ~= nil then
+	local CerbFamiliarItems = {
+		"FamiliarCostume_CerberusBase",
+		"FamiliarCostume_CerberusEM",
+		"FamiliarCostume_CerberusEM2"
+	}
+	game.ScreenData.FamiliarCostumeShop.ItemCategories["HoundFamiliar"] = CerbFamiliarItems
 end
 
 mod.FamiliarMenuData = {
