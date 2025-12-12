@@ -72,5 +72,27 @@ function mod.ToggleFavoriteFamiliarCostume( screen, button )
 end
 
 function mod.ToggleRandomizeFamiliarCostume(screen, button)
-    
+    config.random = config.random == false
+    if config.random then
+        ModifyTextBox({ Id = button.Id, ColorTarget = { 1.0, 0.65, 0.00, 1.0 }, ColorDuration = 0.2 })
+    else
+        ModifyTextBox({ Id = button.Id, ColorTarget = { 0.5, 0.5, 0.5, 1.0 }, ColorDuration = 0.2 })
+    end
 end
+
+function mod.MouseOffRandomButton( button )
+    if config.random then
+        ModifyTextBox({ Id = button.Id, ColorTarget = { 1.0, 0.65, 0.00, 1.0 }, ColorDuration = 0.2 })
+    else
+        ModifyTextBox({ Id = button.Id, ColorTarget = { 0.5, 0.5, 0.5, 1.0 }, ColorDuration = 0.2 })
+    end
+end
+
+modutil.mod.Path.Wrap("OpenFamiliarCostumeScreen",function (base,...)
+    if config.random then
+        game.ScreenData.FamiliarCostumeShop.ComponentData.ActionBar.Children.RandomizeButton.TextArgs.Color = { 1.0, 0.65, 0.0, 1.0 }
+    else
+        game.ScreenData.FamiliarCostumeShop.ComponentData.ActionBar.Children.RandomizeButton.TextArgs.Color = { 0.5, 0.5, 0.5, 1.0 }
+    end
+    return base(...)
+end)

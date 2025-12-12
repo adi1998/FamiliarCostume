@@ -501,11 +501,11 @@ game.ScreenData.FamiliarCostumeShop.ComponentData.ActionBar.Children.RandomizeBu
 		-- Hotkey only
 		OnPressedFunctionName = _PLUGIN.guid .. "." .. "ToggleRandomizeFamiliarCostume",
 		OnMouseOverFunctionName = "MouseOverContextualAction",
-		OnMouseOffFunctionName = "MouseOffContextualAction",
+		OnMouseOffFunctionName = _PLUGIN.guid .. "." .. "MouseOffRandomButton",
 		ControlHotkeys = { "Confirm", },
 	},
 	Text = "{CF} RANDOMIZE",
-	TextArgs = game.UIData.ContextualButtonFormatRight,
+	TextArgs = game.DeepCopyTable(game.UIData.ContextualButtonFormatRight),
 }
 
 game.ProcessDataStore(game.WorldUpgradeData)

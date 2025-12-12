@@ -43,25 +43,27 @@ modutil.mod.Path.Wrap("StartNewRun", function(base, prevRun, args)
         return retValue
     end
 
-    local currentFamiliar = game.GameState.EquippedFamiliar
-    game.GameState.ModFamiliarCostumes = game.GameState.ModFamiliarCostumes or {}
-    if currentFamiliar ~= nil then
-        local costumeList = game.ScreenData.FamiliarCostumeShop.ItemCategories[currentFamiliar]
-        local favoriteList = mod.GetFavorites(costumeList, currentFamiliar)
-        local randomCostume
-        if #favoriteList > 0 then
-            randomCostume = game.GetRandomArrayValue(favoriteList)
-        else
-            randomCostume = game.GetRandomArrayValue(mod.GetUnlockedFamiliarCostumes(costumeList))
-        end
+    if config.random then
+        local currentFamiliar = game.GameState.EquippedFamiliar
+        game.GameState.ModFamiliarCostumes = game.GameState.ModFamiliarCostumes or {}
+        if currentFamiliar ~= nil then
+            local costumeList = game.ScreenData.FamiliarCostumeShop.ItemCategories[currentFamiliar]
+            local favoriteList = mod.GetFavorites(costumeList, currentFamiliar)
+            local randomCostume
+            if #favoriteList > 0 then
+                randomCostume = game.GetRandomArrayValue(favoriteList)
+            else
+                randomCostume = game.GetRandomArrayValue(mod.GetUnlockedFamiliarCostumes(costumeList))
+            end
 
-        -- don't write modded data in basegame tables
-        if FamiliarCostumeData[randomCostume] ~= nil then
-            game.GameState.FamiliarCostumes[currentFamiliar] = game.FamiliarData[currentFamiliar].DefaultCostume
-            game.GameState.ModFamiliarCostumes[currentFamiliar] = randomCostume
-        else
-            game.GameState.ModFamiliarCostumes[currentFamiliar] = nil
-            game.GameState.FamiliarCostumes[currentFamiliar] = randomCostume
+            -- don't write modded data in basegame tables
+            if FamiliarCostumeData[randomCostume] ~= nil then
+                game.GameState.FamiliarCostumes[currentFamiliar] = game.FamiliarData[currentFamiliar].DefaultCostume
+                game.GameState.ModFamiliarCostumes[currentFamiliar] = randomCostume
+            else
+                game.GameState.ModFamiliarCostumes[currentFamiliar] = nil
+                game.GameState.FamiliarCostumes[currentFamiliar] = randomCostume
+            end
         end
     end
     return retValue
