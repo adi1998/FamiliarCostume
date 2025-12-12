@@ -19,8 +19,8 @@ Select the new cosmetics from the in-game familiar costume menu. Requires the in
 | ![Sample](images/sample.png) | |
 | :-: | :-: |
 |  |  |
-
-## Contributors
+<!-- 
+## Contributors -->
 
 ## Issues
 
