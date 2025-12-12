@@ -155,7 +155,7 @@ FamiliarCostumeData = {
 
     FamiliarCostume_RavenBlack =
 	{
-		Icon = "Costume_Raven02",
+		Icon = _PLUGIN.guid .. "bird_black",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "CritterRaven_Mesh",
         GrannyTexture = "zerp-FamiliarCostume/raven/CritterRavenBlack_Color",
