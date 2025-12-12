@@ -100,11 +100,23 @@ pattern = '''
 '''
 position = "after"
 payload = '''
+		GameState.ModFamiliarCostumesFavorites = GameState.ModFamiliarCostumesFavorites or {
+			HoundFamiliar = {},
+			FrogFamiliar = {},
+			RavenFamiliar = {},
+			CatFamiliar = {},
+			PolecatFamiliar = {}
+		}
 		local favIcon = CreateScreenComponent({ Name = "BlankObstacle", Group = screen.ComponentData.DefaultGroup, Alpha = 0.0, })
 		components[itemName .. "FavIcon"] = favIcon
 		table.insert( button.AssociatedIds, favIcon.Id )
 		Attach({ Id = favIcon.Id, DestinationId = button.Id, OffsetX = screen.PinOffsetX, OffsetY = UIData.PinIconListOffsetY })
 		button.FavButtonId = favIcon.Id
+		if GameState.ModFamiliarCostumesFavorites[screen.OpenedFrom.Name][itemName] == true then
+			local animationName = "FilledHeartIcon"
+            SetAnimation({ Name = animationName, DestinationId = button.FavButtonId, Scale = 0.3, OffsetY = 15})
+			SetAlpha({ Id = favIcon.Id, Fraction = 1.0, Duration = 0.1 })
+		end
 '''
 match_indent = true
 times = 1

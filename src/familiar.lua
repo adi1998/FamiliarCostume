@@ -1,3 +1,16 @@
+function mod.dump(o)
+   if type(o) == 'table' then
+      local s = '{ '
+      for k,v in pairs(o) do
+         if type(k) ~= 'number' then k = '"'..k..'"' end
+         s = s .. '['..k..'] = ' .. mod.dump(v) .. ','
+      end
+      return s .. '} '
+   else
+      return tostring(o)
+   end
+end
+
 function mod.PatchModCostume(costume)
     if rom.mods["zerp-Cerberus_Familiar"] then
         if not game.Contains(mod.CerbFamiliarItems,costume) then
@@ -36,9 +49,18 @@ function mod.ToggleFavoriteFamiliarCostume( screen, button )
         return
     end
     print("toggle fav fam cos")
+    game.GameState.ModFamiliarCostumesFavorites = game.GameState.ModFamiliarCostumesFavorites or {
+        HoundFamiliar = {},
+        FrogFamiliar = {},
+        RavenFamiliar = {},
+        CatFamiliar = {},
+        PolecatFamiliar = {}
+    }
+    local IsFavorite = game.GameState.ModFamiliarCostumesFavorites[screen.OpenedFrom.Name][selectedItem.Data.Name]
     if selectedItem.Purchased then
-        selectedItem.IsFavorite = not selectedItem.IsFavorite == true
-        if selectedItem.IsFavorite then
+        IsFavorite = not IsFavorite == true
+        game.GameState.ModFamiliarCostumesFavorites[screen.OpenedFrom.Name][selectedItem.Data.Name] = IsFavorite
+        if IsFavorite then
             local animationName = "FilledHeartIcon"
             SetAnimation({ Name = animationName, DestinationId = selectedItem.FavButtonId, Scale = 0.3, OffsetY = 15})
             SetAlpha({ Id = selectedItem.FavButtonId, Fraction = 1.0, Duration = 0.1 })
@@ -46,6 +68,7 @@ function mod.ToggleFavoriteFamiliarCostume( screen, button )
             SetAlpha({ Id = selectedItem.FavButtonId, Fraction = 0.0, Duration = 0.1 })
         end
     end
+    print(mod.dump(game.GameState.ModFamiliarCostumesFavorites))
 end
 
 function mod.ToggleRandomizeFamiliarCostume(screen, button)
