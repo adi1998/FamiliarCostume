@@ -1,6 +1,10 @@
 ## Familiar Costumes
 
-Hades II mod allowing you to select new cosmetics for familiars. Includes custom skins and uses edited ambient critter textures for some of them.
+Hades II mod allowing you to select new cosmetics for familiars. Includes a few custom skins and edited ambient critter textures if available.
+
+Options to pin favorite cosmetics and randomize them on a new run.
+
+Compatible with [Cerberus Familiar](https://thunderstore.io/c/hades-ii/p/zerp/Cerberus_Familiar/), options to switch to unrivaled cerberus.
 
 ## Installation
 
@@ -10,20 +14,14 @@ While the mod has been tested decently well it is recommended to backup your sav
 
 ## Usage
 
-Buy the new cosmetics from the in-game familiar costume menu.
+Select the new cosmetics from the in-game familiar costume menu. Requires the incantation "Alteration of Familiar Forms" to be unlocked.
 
 | ![Sample](images/sample.png) | |
 | :-: | :-: |
 |  |  |
 
-## Skins
-
-## Adding skins to this mod
-
-TODO
-
 ## Contributors
 
 ## Issues
 
-Report any issues [here](https://github.com/adi1998/FamiliarCostume/issues) or on [Discord](https://discord.gg/bKvJTAJj)
+Report any issues [here](https://github.com/adi1998/FamiliarCostume/issues) or on [Discord](https://discord.gg/bKvJTAJj) in the requests-h2/Costume selector thread
