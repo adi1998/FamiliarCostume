@@ -436,13 +436,14 @@ for familiar, familiarCostumeList in pairs(mod.FamiliarList.ItemCategories) do
     end
 end
 
+mod.CerbFamiliarItems = {
+	"FamiliarCostume_CerberusBase",
+	"FamiliarCostume_CerberusEM",
+	"FamiliarCostume_CerberusEM2"
+}
+
 if rom.mods["zerp-Cerberus_Familiar"]  ~= nil then
-	local CerbFamiliarItems = {
-		"FamiliarCostume_CerberusBase",
-		"FamiliarCostume_CerberusEM",
-		"FamiliarCostume_CerberusEM2"
-	}
-	game.ScreenData.FamiliarCostumeShop.ItemCategories["HoundFamiliar"] = CerbFamiliarItems
+	game.ScreenData.FamiliarCostumeShop.ItemCategories["HoundFamiliar"] = mod.CerbFamiliarItems
 end
 
 mod.FamiliarMenuData = {
