@@ -16,8 +16,8 @@ While the mod has been tested decently well it is recommended to backup your sav
 
 Select the new cosmetics from the in-game familiar costume menu. Requires the base game incantation "Alteration of Familiar Forms" to be unlocked.
 
-| ![Sample](images/sample.png) | |
-| :-: | :-: |
+| ![Sample](images/sample.png) | ![menu](images/menu.png) |
+| - | - |
 |  |  |
 <!-- 
 ## Contributors -->
