@@ -4,7 +4,7 @@ FamiliarCostumeData = {
 		Icon = _PLUGIN.guid .. "frog_brown",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "Frog_Mesh",
-        GrannyTexture = "zerp-FamiliarCostume/frog/CritterFrogBrown_Color",
+        GrannyTexture = "zerp-Familiar_Costume_Randomizer/frog/CritterFrogBrown_Color",
 
 		AlwaysRevealImmediately = true,
         Cost = {},
@@ -26,7 +26,7 @@ FamiliarCostumeData = {
 		Icon = _PLUGIN.guid .. "frog_green",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "Frog_Mesh",
-        GrannyTexture = "zerp-FamiliarCostume/frog/CritterFrogGreen_Color",
+        GrannyTexture = "zerp-Familiar_Costume_Randomizer/frog/CritterFrogGreen_Color",
 
 		AlwaysRevealImmediately = true,
         Cost = {},
@@ -48,7 +48,7 @@ FamiliarCostumeData = {
 		Icon = _PLUGIN.guid .. "frog_grey",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "Frog_Mesh",
-        GrannyTexture = "zerp-FamiliarCostume/frog/CritterFrogGrey_Color",
+        GrannyTexture = "zerp-Familiar_Costume_Randomizer/frog/CritterFrogGrey_Color",
 
 		AlwaysRevealImmediately = true,
         Cost = {},
@@ -70,7 +70,7 @@ FamiliarCostumeData = {
 		Icon = _PLUGIN.guid .. "frog_yellow",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "Frog_Mesh",
-        GrannyTexture = "zerp-FamiliarCostume/frog/CritterFrogYellow_Color",
+        GrannyTexture = "zerp-Familiar_Costume_Randomizer/frog/CritterFrogYellow_Color",
 
 		AlwaysRevealImmediately = true,
         Cost = {},
@@ -92,7 +92,7 @@ FamiliarCostumeData = {
 		Icon = _PLUGIN.guid .. "hound_beige",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "HoundFamiliar_Mesh",
-        GrannyTexture = "zerp-FamiliarCostume/hound/CritterDogBeige_Color",
+        GrannyTexture = "zerp-Familiar_Costume_Randomizer/hound/CritterDogBeige_Color",
 
 		AlwaysRevealImmediately = true,
         Cost = {},
@@ -114,7 +114,7 @@ FamiliarCostumeData = {
 		Icon = _PLUGIN.guid .. "hound_tan",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "HoundFamiliar_Mesh",
-        GrannyTexture = "zerp-FamiliarCostume/hound/CritterDogTan_Color",
+        GrannyTexture = "zerp-Familiar_Costume_Randomizer/hound/CritterDogTan_Color",
 
 		AlwaysRevealImmediately = true,
         Cost = {},
@@ -136,7 +136,7 @@ FamiliarCostumeData = {
 		Icon = _PLUGIN.guid .. "hound_orange",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "HoundFamiliar_Mesh",
-        GrannyTexture = "zerp-FamiliarCostume/hound/CritterDogOrange_Color",
+        GrannyTexture = "zerp-Familiar_Costume_Randomizer/hound/CritterDogOrange_Color",
 
 		AlwaysRevealImmediately = true,
         Cost = {},
@@ -158,7 +158,7 @@ FamiliarCostumeData = {
 		Icon = _PLUGIN.guid .. "bird_black",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "CritterRaven_Mesh",
-        GrannyTexture = "zerp-FamiliarCostume/raven/CritterRavenBlack_Color",
+        GrannyTexture = "zerp-Familiar_Costume_Randomizer/raven/CritterRavenBlack_Color",
 
 		AlwaysRevealImmediately = true,
         Cost = {},
@@ -180,7 +180,7 @@ FamiliarCostumeData = {
 		Icon = _PLUGIN.guid .. "bird_green",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "RavenFamiliar_Mesh",
-        GrannyTexture = "zerp-FamiliarCostume/raven/DefaultRavenGreen_Color",
+        GrannyTexture = "zerp-Familiar_Costume_Randomizer/raven/DefaultRavenGreen_Color",
 
 		AlwaysRevealImmediately = true,
         Cost = {},
@@ -202,7 +202,7 @@ FamiliarCostumeData = {
 		Icon = _PLUGIN.guid .. "cat_bicolor",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "CatFamiliar_Mesh",
-        GrannyTexture = "zerp-FamiliarCostume/cat/CritterCatBicolor_Color",
+        GrannyTexture = "zerp-Familiar_Costume_Randomizer/cat/CritterCatBicolor_Color",
 
 		AlwaysRevealImmediately = true,
         Cost = {},
@@ -224,7 +224,7 @@ FamiliarCostumeData = {
 		Icon = _PLUGIN.guid .. "cat_black",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "CatFamiliar_Mesh",
-        GrannyTexture = "zerp-FamiliarCostume/cat/CritterCatBlack_Color",
+        GrannyTexture = "zerp-Familiar_Costume_Randomizer/cat/CritterCatBlack_Color",
 
 		AlwaysRevealImmediately = true,
         Cost = {},
@@ -246,7 +246,7 @@ FamiliarCostumeData = {
 		Icon = _PLUGIN.guid .. "cat_spotted",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "CatFamiliar_Mesh",
-        GrannyTexture = "zerp-FamiliarCostume/cat/CritterCatSpotted_Color",
+        GrannyTexture = "zerp-Familiar_Costume_Randomizer/cat/CritterCatSpotted_Color",
 
 		AlwaysRevealImmediately = true,
         Cost = {},
@@ -268,7 +268,7 @@ FamiliarCostumeData = {
 		Icon = _PLUGIN.guid .. "cat_tabby",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "CatFamiliar_Mesh",
-        GrannyTexture = "zerp-FamiliarCostume/cat/CritterCatTabby_Color",
+        GrannyTexture = "zerp-Familiar_Costume_Randomizer/cat/CritterCatTabby_Color",
 
 		AlwaysRevealImmediately = true,
         Cost = {},
@@ -290,7 +290,7 @@ FamiliarCostumeData = {
 		Icon = _PLUGIN.guid .. "cat_tuxedo",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "CatFamiliar_Mesh",
-        GrannyTexture = "zerp-FamiliarCostume/cat/CritterCatTuxedo_Color",
+        GrannyTexture = "zerp-Familiar_Costume_Randomizer/cat/CritterCatTuxedo_Color",
 
 		AlwaysRevealImmediately = true,
         Cost = {},
@@ -312,7 +312,7 @@ FamiliarCostumeData = {
 		Icon = _PLUGIN.guid .. "cat_white",
 		InheritFrom = { "DefaultFamiliarCostume" },
 		GrannyModel = "CatFamiliar_Mesh",
-        GrannyTexture = "zerp-FamiliarCostume/cat/CritterCatWhite_Color",
+        GrannyTexture = "zerp-Familiar_Costume_Randomizer/cat/CritterCatWhite_Color",
 
 		AlwaysRevealImmediately = true,
         Cost = {},

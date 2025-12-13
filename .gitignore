@@ -15,7 +15,7 @@
 tcli.exe
 
 # ignore unpacked package contents
-/data/zerp-FamiliarCostume
+/data/zerp-Familiar_Costume_Randomizer
 
 # ignore PSD files
 *.psd

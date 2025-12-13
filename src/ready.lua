@@ -1,5 +1,5 @@
 mod.skinPackageList = {}
-table.insert(mod.skinPackageList, _PLUGIN.guid .. "zerp-FamiliarCostume")
+table.insert(mod.skinPackageList, _PLUGIN.guid .. "zerp-Familiar_Costume_Randomizer")
 
 function mod.LoadSkinPackages()
     game.LoadPackages({Names = mod.skinPackageList})

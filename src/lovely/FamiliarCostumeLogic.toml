@@ -3,7 +3,7 @@ version = "1.0.0"
 priority = 0
 
 [vars]
-zerpFamiliarCostumeenv = "rom.mods['zerp-FamiliarCostume'].lovely_env"
+zerpFamiliarCostumeenv = "rom.mods['zerp-Familiar_Costume_Randomizer'].lovely_env"
 
 [[patches]]
 [patches.pattern]

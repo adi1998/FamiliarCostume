@@ -3,9 +3,9 @@ schemaVersion = "0.0.1"
 
 [package]
 namespace = "zerp"
-name = "FamiliarCostume"
+name = "Familiar_Costume_Randomizer"
 versionNumber = "0.1.0"
-description = "Hades II mod adding more cosmetics for familiars."
+description = "Hades II mod adding more cosmetics for familiars. Options to pin favorite and randomize each run."
 websiteUrl = "https://github.com/adi1998/FamiliarCostume"
 containsNsfwContent = false
 

@@ -1,10 +1,10 @@
-## Familiar Costumes
+## Familiar Costume Randomizer
 
-Hades II mod allowing you to select new cosmetics for familiars. Includes a few custom skins and edited ambient critter textures if available.
+Hades II mod allowing you to randomize cosmetics for familiars on each run. Includes a few custom skins and edited ambient critter textures.
 
-Options to pin favorite cosmetics and randomize them on a new run.
+Also includes option to pin favorite cosmetics for randomization.
 
-Compatible with [Cerberus Familiar](https://thunderstore.io/c/hades-ii/p/zerp/Cerberus_Familiar/), options to switch to unrivaled cerberus.
+Compatible with [Cerberus Familiar](https://thunderstore.io/c/hades-ii/p/zerp/Cerberus_Familiar/).
 
 ## Installation
 
