@@ -48,7 +48,6 @@ function mod.ToggleFavoriteFamiliarCostume( screen, button )
     if selectedItem == nil then
         return
     end
-    print("toggle fav fam cos")
     game.GameState.ModFamiliarCostumesFavorites = game.GameState.ModFamiliarCostumesFavorites or {
         HoundFamiliar = {},
         FrogFamiliar = {},
