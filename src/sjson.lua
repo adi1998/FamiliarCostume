@@ -41,7 +41,7 @@ end)
 
 local familiarIconFormat = {
         Name = _PLUGIN.guid,
-        FilePath = "zerp-Familiar_Costume_Randomizer/icons/",
+        FilePath = "zerp-Familiar_Costume_Randomizer/",
         Scale = 1.1
 }
 

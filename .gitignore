@@ -19,3 +19,5 @@ tcli.exe
 
 # ignore PSD files
 *.psd
+
+/__pycache__/
