@@ -77,9 +77,9 @@ modutil.mod.Path.Wrap("MouseOverFamiliarCostumeItem", function (base, button)
 		return
 	end
     if button.Purchased then
-        SetAlpha({ Id = screen.Components.FavoriteButton.Id, Fraction = 1.0, Duration = 0.1 })
+        game.SetAlpha({ Id = screen.Components.FavoriteButton.Id, Fraction = 1.0, Duration = 0.1 })
     else
-        SetAlpha({ Id = screen.Components.FavoriteButton.Id, Fraction = 0.0, Duration = 0.1 })
+        game.SetAlpha({ Id = screen.Components.FavoriteButton.Id, Fraction = 0.0, Duration = 0.1 })
     end
 end)
 
@@ -89,5 +89,5 @@ modutil.mod.Path.Wrap("MouseOffFamiliarCostumeItem", function (base, button)
 	if screen.Closing then
 		return
 	end
-    SetAlpha({ Id = screen.Components.FavoriteButton.Id, Fraction = 0.0, Duration = 0.1 })
+    game.SetAlpha({ Id = screen.Components.FavoriteButton.Id, Fraction = 0.0, Duration = 0.1 })
 end)

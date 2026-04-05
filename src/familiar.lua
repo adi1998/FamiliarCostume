@@ -37,7 +37,7 @@ modutil.mod.Path.Wrap("SetupFamiliarCostume", function (base, familiar,args)
         local costumeData = game.WorldUpgradeData[currentModCostume]
         game.SetThingProperty({ DestinationId = familiar.ObjectId, Property = "GrannyModel", Value = costumeData.GrannyModel })
         game.SetThingProperty({ DestinationId = familiar.ObjectId, Property = "GrannyTexture", Value = costumeData.GrannyTexture })
-        SetAnimation({ DestinationId = familiar.ObjectId, Name = args.Animation or familiar.IdleAnimation })
+        game.SetAnimation({ DestinationId = familiar.ObjectId, Name = args.Animation or familiar.IdleAnimation })
     else
         game.SetThingProperty({ DestinationId = familiar.ObjectId, Property = "GrannyTexture", Value = "" })
     end
@@ -61,10 +61,10 @@ function mod.ToggleFavoriteFamiliarCostume( screen, button )
         game.GameState.ModFamiliarCostumesFavorites[screen.OpenedFrom.Name][selectedItem.Data.Name] = IsFavorite
         if IsFavorite then
             local animationName = "FilledHeartIcon"
-            SetAnimation({ Name = animationName, DestinationId = selectedItem.FavButtonId, Scale = 0.3, OffsetY = 15})
-            SetAlpha({ Id = selectedItem.FavButtonId, Fraction = 1.0, Duration = 0.1 })
+            game.SetAnimation({ Name = animationName, DestinationId = selectedItem.FavButtonId, Scale = 0.3, OffsetY = 15})
+            game.SetAlpha({ Id = selectedItem.FavButtonId, Fraction = 1.0, Duration = 0.1 })
         else
-            SetAlpha({ Id = selectedItem.FavButtonId, Fraction = 0.0, Duration = 0.1 })
+            game.SetAlpha({ Id = selectedItem.FavButtonId, Fraction = 0.0, Duration = 0.1 })
         end
     end
     print(mod.dump(game.GameState.ModFamiliarCostumesFavorites))
@@ -73,17 +73,17 @@ end
 function mod.ToggleRandomizeFamiliarCostume(screen, button)
     config.random = config.random == false
     if config.random then
-        ModifyTextBox({ Id = button.Id, ColorTarget = { 1.0, 0.65, 0.00, 1.0 }, ColorDuration = 0.2 })
+        game.ModifyTextBox({ Id = button.Id, ColorTarget = { 1.0, 0.65, 0.00, 1.0 }, ColorDuration = 0.2 })
     else
-        ModifyTextBox({ Id = button.Id, ColorTarget = { 0.5, 0.5, 0.5, 1.0 }, ColorDuration = 0.2 })
+        game.ModifyTextBox({ Id = button.Id, ColorTarget = { 0.5, 0.5, 0.5, 1.0 }, ColorDuration = 0.2 })
     end
 end
 
 function mod.MouseOffRandomButton( button )
     if config.random then
-        ModifyTextBox({ Id = button.Id, ColorTarget = { 1.0, 0.65, 0.00, 1.0 }, ColorDuration = 0.2 })
+        game.ModifyTextBox({ Id = button.Id, ColorTarget = { 1.0, 0.65, 0.00, 1.0 }, ColorDuration = 0.2 })
     else
-        ModifyTextBox({ Id = button.Id, ColorTarget = { 0.5, 0.5, 0.5, 1.0 }, ColorDuration = 0.2 })
+        game.ModifyTextBox({ Id = button.Id, ColorTarget = { 0.5, 0.5, 0.5, 1.0 }, ColorDuration = 0.2 })
     end
 end
 

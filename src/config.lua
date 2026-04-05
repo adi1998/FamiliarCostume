@@ -1,5 +1,4 @@
 local config = {
-  enabled = true;
   random = true;
   debug_reload = false;
 }

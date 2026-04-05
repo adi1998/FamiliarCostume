@@ -52,7 +52,6 @@ end
 local function on_reload()
     -- what to do when we are ready, but also again on every reload.
     -- only do things that are safe to run over and over.
-
     if config.debug_reload == false then return end
 end
 
