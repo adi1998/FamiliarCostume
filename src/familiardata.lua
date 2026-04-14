@@ -368,7 +368,35 @@ FamiliarCostumeData = {
 		{
 			{ GlobalVoiceLines = "FamiliarSwitchToDefaultCostumeVoiceLines" },
 		},
-	}
+	},
+
+	FamiliarCostume_CerberusDream = {
+		Icon = _PLUGIN.guid .. "cerb_dream",
+		InheritFrom = {"DefaultFamiliarCostume"},
+		GrannyModel = "InfestedCerberus_Mesh",
+		GrannyTexture = "GR2/InfestedCerberusDream_Color",
+		AlwaysRevealImmediately = true,
+        Cost = {},
+
+		SwitchCostumeVoiceLines =
+		{
+			{ GlobalVoiceLines = "FamiliarSwitchToDefaultCostumeVoiceLines" },
+		},
+	},
+
+	FamiliarCostume_CerberusDreamEM = {
+		Icon = _PLUGIN.guid .. "cerb_dream_em",
+		InheritFrom = {"DefaultFamiliarCostume"},
+		GrannyModel = "InfestedCerberus_Mesh",
+		GrannyTexture = "GR2/InfestedCerberusDreamEM_Color",
+		AlwaysRevealImmediately = true,
+        Cost = {},
+
+		SwitchCostumeVoiceLines =
+		{
+			{ GlobalVoiceLines = "FamiliarSwitchToDefaultCostumeVoiceLines" },
+		},
+	},
 }
 
 game.OverwriteTableKeys( game.WorldUpgradeData, FamiliarCostumeData)
@@ -412,7 +440,9 @@ end
 mod.CerbFamiliarItems = {
 	"FamiliarCostume_CerberusBase",
 	"FamiliarCostume_CerberusEM",
-	"FamiliarCostume_CerberusEM2"
+	"FamiliarCostume_CerberusEM2",
+	"FamiliarCostume_CerberusDream",
+	"FamiliarCostume_CerberusDreamEM",
 }
 
 if rom.mods["zerp-Cerberus_Familiar"]  ~= nil then

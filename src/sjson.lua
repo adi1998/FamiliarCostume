@@ -20,6 +20,8 @@ local FamiliarNames = {
     FamiliarCostume_CerberusBase = "Default",
     FamiliarCostume_CerberusEM = "Unrivaled",
     FamiliarCostume_CerberusEM2 = "Unrivaled Phase 2",
+    FamiliarCostume_CerberusDream = "Visage",
+	FamiliarCostume_CerberusDreamEM = "Unrivaled Visage",
 }
 
 local helptextorder = {
