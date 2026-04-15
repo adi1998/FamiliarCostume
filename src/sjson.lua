@@ -72,6 +72,8 @@ local FamiliarIconList = {
     "cerb_default",
     "cerb_unrivaled",
     "cerb_unrivaled2",
+    "cerb_dream",
+    "cerb_dream_em",
 }
 
 sjson.hook(guiScreensVFXFile, function (data)

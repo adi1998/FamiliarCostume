@@ -2,6 +2,9 @@
 
 ## [Unreleased]
 
+- Add Visage forms for Cerberus Familiar
+- New texture packing technique to remove shimmering from custom skins
+
 ## [1.0.2] - 2025-12-13
 
 ## [1.0.1] - 2025-12-13
