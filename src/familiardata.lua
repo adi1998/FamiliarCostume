@@ -376,6 +376,17 @@ FamiliarCostumeData = {
 		GrannyModel = "InfestedCerberus_Mesh",
 		GrannyTexture = "GR2/InfestedCerberusDream_Color",
 		AlwaysRevealImmediately = true,
+
+		Outline = {
+			R = 230,
+			G = 23,
+			B = 0,
+			Alpha = 255,
+			Opacity = 0.8,
+			Thickness = 3,
+			Threshold = 0.6,
+		},
+
         Cost = {},
 
 		SwitchCostumeVoiceLines =
@@ -390,6 +401,17 @@ FamiliarCostumeData = {
 		GrannyModel = "InfestedCerberus_Mesh",
 		GrannyTexture = "GR2/InfestedCerberusDreamEM_Color",
 		AlwaysRevealImmediately = true,
+
+		Outline = {
+			R = 230,
+			G = 23,
+			B = 0,
+			Alpha = 255,
+			Opacity = 0.8,
+			Thickness = 3,
+			Threshold = 0.6,
+		},
+
         Cost = {},
 
 		SwitchCostumeVoiceLines =

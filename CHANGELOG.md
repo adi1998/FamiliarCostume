@@ -2,6 +2,8 @@
 
 ## [Unreleased]
 
+- Add missing outline for Cerberus Visage forms
+
 ## [1.1.0] - 2026-04-15
 
 - Add Visage forms for Cerberus Familiar
